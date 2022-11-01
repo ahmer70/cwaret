@@ -1,0 +1,112 @@
+.OpenBtn{
+    display: grid;
+    z-index: 1;
+    justify-items: center;
+    font-size: large;
+  
+    color: white;
+    border: none;
+/* From https://css.glass */
+
+border-radius: 0px ;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
+}
+.menubg{
+    z-index: 1;
+    background-image: linear-gradient(to right, #000460, #1339a3);
+    color: white;
+}
+
+
+
+.contactusdiv{
+    position: relative;
+    z-index: 1;
+    /* background-color: #80808066; */
+  
+    color: white;
+    /* width: 10%; */
+    text-align: center;
+    /* align-items: center; */
+    border-radius: 4px;
+}
+.contactusbtn{
+  color: white;
+}
+.contactusbtn:hover{
+    color: white;
+
+  }
+
+  .contactusdiv:hover{
+    background-image: linear-gradient(to right, #000460, #1339a3);
+
+}
+
+
+.menulist>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+
+
+}
+
+.servicesArrow{
+    width: 900px;
+    border-radius: 8px;
+    overflow: auto;
+    height: 500px;
+
+    box-shadow: 1px 1px 1px 1px gray;
+
+  /* width: 300px;
+  height: 300px; */
+  /* clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%); */
+    z-index: 1;
+}
+.servicesArrow::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #1339a3;
+    z-index: 1;
+}
+
+
+
+.servicelink{
+    height: fit-content;
+    
+}
+.servicelink:hover {
+    background-image: linear-gradient(to right, #000460, #1339a3);
+    color: white;
+    transition: "0.8s";
+
+
+}
+
+.servicesArrow::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  .servicesArrow::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .servicesArrow::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #000460, #1339a3);
+    /* border-radius: 0px 10px 10px 0px; */
+  }
+  
+  /* Handle on hover */
+  .servicesArrow::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right, #000460, #1339a3);
+  }

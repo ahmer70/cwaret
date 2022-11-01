@@ -1,0 +1,21 @@
+ 
+
+
+.cardCol:not(:last-child){
+    border-right: 2px dashed #4797FF;
+    
+    }
+    
+    .cardCol>a{
+       
+        text-decoration: none;
+    }
+    .cardCol>a>p:last-child{
+        color: gray;
+       
+    }
+    
+    .cardCol>a>p:first-child{
+        color: #4797FF;
+       
+    }

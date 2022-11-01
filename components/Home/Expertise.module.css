@@ -1,0 +1,66 @@
+.services {
+  margin-top: 68px;
+  width: 75%;
+}
+.serviceHead > p:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 2px dashed #4797ff;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.serviceHead > p:nth-child(2) {
+  font-size: 24px;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+.cardRow {
+  margin: 18px auto;
+
+  background-color: #ebf4fa;
+  padding: 20px;
+}
+.cardRow > div:first-child {
+  border-bottom: 2px dashed #4797ff;
+}
+
+.cardCol:not(:last-child) {
+  border-right: 2px dashed #4797ff;
+}
+
+
+
+
+
+.cardCol > a {
+  text-decoration: none;
+}
+.cardCol > a > p:last-child {
+  color: gray;
+}
+
+.cardCol > a > p:first-child {
+  color: #4797ff;
+}
+
+
+
+
+.Exp2ndCardCol {
+  padding-top: 20px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.Exp2ndCardCol > a {
+  text-decoration: none;
+}
+.Exp2ndCardCol > a > p:last-child {
+  color: gray;
+}
+
+.Exp2ndCardCol > a > p:first-child {
+  color: #4797ff;
+}

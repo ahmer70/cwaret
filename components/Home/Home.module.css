@@ -1,0 +1,93 @@
+.header{
+    background-image: linear-gradient(to bottom right, black, #000460);
+    height: 500px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.headercaptions{
+/* From https://css.glass */
+
+  padding: 50px 60px;
+  
+ 
+background: rgb(80 80 80 / 19%);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+color: white;
+
+}
+
+.headercaptions>div>p{
+    font-size: 30px;
+}
+.headercaptions>div>a{
+    text-decoration: none;
+ 
+    color: white;
+
+}
+
+.headercaptions{
+    margin-top: 23px;
+    text-decoration: none;
+
+    border-radius: 5px;
+    color: white;
+   
+ 
+    padding: 30px 30px;
+}
+
+.headercaptions>div:last-child{
+    margin-top: 23px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 4px;
+}
+
+.card2{
+    margin: 68px auto;
+    width: 75%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.card2>div>div{
+    padding: 17px;
+    
+}
+.card2>div>div>div{
+    padding: 40px;
+    text-align: center;
+    background-color: hsl(240deg 6% 87% / 39%);
+    box-shadow: 5px 5px 4px 1px hsl(240deg 8% 46% / 53%);
+    height: 300px;
+    transition: .5s;
+    border-radius: 6px;
+}
+.card2>div>div>div:hover{
+
+    /* background-color: hsl(240deg 6% 87% / 39%); */
+    background-image: linear-gradient(to right, #000460 , #0071BC);
+    transition: .5s;
+ color: white;
+}
+.card2>div>div>div:hover a{
+
+  
+ color: white;
+}
+
+.card2>div>div>div>a{
+    text-decoration: none;
+}

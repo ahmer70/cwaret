@@ -1,0 +1,71 @@
+.services {
+  margin-top: 68px;
+
+}
+.serviceHead > p:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 2px dashed #4797ff;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.serviceHead > p:nth-child(2) {
+  font-size: 24px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.cardRow {
+  margin: 18px auto;
+  z-index:1;
+  
+}
+.cardRow1 {
+  border-bottom: 2px dashed #4797ff;
+}
+.cardRow:hover .cardRow1 {
+  border-bottom: 2px dashed white;
+}
+
+
+
+.cardRow:hover .cardCol:not(:last-child) {
+  border-right: 2px dashed white;
+}
+
+.cardCol:not(:last-child) {
+  border-right: 2px dashed #4797ff;
+}
+.cardCol:hover {
+  background-color: #235374a8;
+}
+
+.cardCol:hover .cardRow {
+  background-color: #235374;
+}
+
+.cardCol >div> a {
+  text-decoration: none;
+}
+.cardCol>div > a > p:last-child {
+  color: gray;
+}
+
+.cardCol >div> a > p:first-child {
+  color: #4797ff;
+}
+
+.cardCol:hover .cardCol>div > a > p:last-child {
+  color: white;
+}
+
+.cardRow:hover a p {
+  color: white;
+}
+
+
+
+
+.cardRow>div>div:hover  .cardRow{
+  background-color:   rgba(0, 113, 188, 0.6);
+}
