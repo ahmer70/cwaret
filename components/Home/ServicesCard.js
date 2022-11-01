@@ -111,7 +111,7 @@ const ServicesCard = ({ offset }) => {
           : "url(/image/services/dtbg2.jpg)"
       }`,
       backgroundColor: "#cccccc",
-      transform: "scale(1.08)",
+ 
       transition: ".5s",
 
       backgroundPosition: "center",
