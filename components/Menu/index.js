@@ -13,7 +13,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import ServicesList from "./ServicesList";
 
-const NavbarMenu = ({ bggray }) => {
+const NavbarMenu = ({ bggray ,contact}) => {
   const [IsServices, setIsServices] = useState(false);
   return (
     <>
@@ -30,12 +30,13 @@ const NavbarMenu = ({ bggray }) => {
       >
         <Container>
           <Navbar.Brand href="/">
-            <Image
+           {!contact&& <Image
               src={"/image/cware-logo.png"}
               width={120}
               height={90}
               alt={"logo"}
-            />
+            />}
+
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Offcanvas
@@ -50,6 +51,15 @@ const NavbarMenu = ({ bggray }) => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-center align-items-center flex-grow-1 pe-3 ">
+                
+                {contact&& <div className={`${style.contactusdiv} `}>
+                  <Nav.Link
+                    href="/"
+                    className={`${style.contactusbtn}  `}
+                  >
+                    Home
+                  </Nav.Link>
+                </div>}
                 <div className={`${style.contactusdiv} `}>
                   <Nav.Link
                     href="/about"

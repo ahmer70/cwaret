@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className={`${style.header} p-3 `}>
       
-      <div className="row m-0 ">
+      <div className="row m-0 position-relative" style={{zIndex:2}}>
         <div className="col-1 ps-0">
         
         </div>
@@ -28,11 +28,11 @@ const Header = () => {
           </Fade>
 
             
-            <Fade  cascade damping={0.1} direction={"up"} delay={0.2}>
-              <Link href="/">
+            <div className="position-relative" style={{zIndex:2}}>
+              <Link href="/about" className="lmbtn">
                 Learn More
               </Link>
-            </Fade>
+            </div>
           </div>
         </div>
       </div>

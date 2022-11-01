@@ -3,14 +3,13 @@ import React from 'react'
 
 import ServicesCard from './ServicesCard';
 
-const EnterpriseSolutions = () => {
+const EnterpriseSolutions = ({about}) => {
     const ES_DATA = [
         {
           id: "/enterprise_solutions/es1",
           title: "Oracle Cloud Infrastructure",
-          image: "/image/network.svg",
-
-          hImage: "/image/network-white.svg",
+          image: "/image/servicesicons/network-1.svg",
+          hImage: "/image/servicesicons/network.svg",
           bg:"/image/services/ocibg.jpg",
           discription:
             "Thinking of shifting to cloud? Let our team of certified developers help you move to Oracle Cloud infrastructure.",
@@ -18,8 +17,8 @@ const EnterpriseSolutions = () => {
         {
           id: "/enterprise_solutions/es2",
           title: "Siebel CRM",
-          image: "/image/CRM.svg",
-          hImage: "/image/crm-white.svg",
+          image: "/image/servicesicons/CRM.svg",
+          hImage:  "/image/servicesicons/CRM-1.svg",
           bg:"/image/services/crmbg.jpg",
           discription:
             "Engage with our certified experts in business design, development, testing and EAI/EIM development.",
@@ -27,8 +26,8 @@ const EnterpriseSolutions = () => {
         {
           id: "/enterprise_solutions/es3",
           title: "MySQL",
-          image: "/image/mysql.svg",
-          hImage:"/image/servieshovericon/es/mysql.svg",
+          image: "/image/servicesicons/mysql-1.svg",
+          hImage:"/image/servicesicons/mysql.svg",
           bg:"/image/services/ConfigMigrateDataMySQL.jpg",
           discription:
             "Let our team design, architect, develop and performance tune your MySQL to increase performance and secure your vital data.",
@@ -36,8 +35,8 @@ const EnterpriseSolutions = () => {
         {
           id: "/enterprise_solutions/es4",
           title: "Oracle Data Integrator",
-          image: "/image/computer.svg",
-          hImage:"/image/servieshovericon/es/odn.svg",
+          image: "/image/servicesicons/computer.svg",
+          hImage:"/image/servicesicons/computer-1.svg",
           bg:"/image/services/oracle-data-modernization-services-1.jpg",
           discription:
             "Maintain data integration and secure migration processes by leveraging ODI in our expert guidance.",
@@ -46,8 +45,8 @@ const EnterpriseSolutions = () => {
         {
           id: "/enterprise_solutions/es5",
           title: "Business Process Outsourcing",
-          image: "/image/engineering.svg",
-          hImage: "/image/engineering-white.svg",
+          image: "/image/servicesicons/engineering-1.svg",
+          hImage: "/image/servicesicons/engineering.svg",
           bg:"/image/services/pbobg.jpg",
           discription:
             "Focus on your core business activities and let your secondary business activities be taken care by our strong processes.",
@@ -55,8 +54,8 @@ const EnterpriseSolutions = () => {
         {
           id: "/enterprise_solutions/es6",
           title: "Support 24/7",
-          image: "/image/call-center.svg",
-          hImage:"/image/servieshovericon/es/sp.png",
+          image: "/image/servicesicons/call-center.svg",
+          hImage:"/image/servicesicons/call-center-1.svg",
           bg:"/image/services/Screenshot_1.png",
           discription:
             "Hire our dedicated team to support your Enterprise related IT issues.",
@@ -64,7 +63,7 @@ const EnterpriseSolutions = () => {
       ];
   return (
     <>
-        <ServicesCard data={ES_DATA} />
+        <ServicesCard data={ES_DATA} about={about} />
     </>
   )
 }

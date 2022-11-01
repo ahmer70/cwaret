@@ -26,7 +26,6 @@ color: white;
 }
 .headercaptions>div>a{
     text-decoration: none;
- 
     color: white;
 
 }
@@ -43,7 +42,9 @@ color: white;
 }
 
 .headercaptions>div:last-child{
+  
     margin-top: 23px;
+    cursor: pointer;
     text-decoration: none;
     border: 1px solid white;
     border-radius: 5px;
@@ -51,6 +52,19 @@ color: white;
     width: 150px;
     text-align: center;
     padding: 4px;
+}
+.headercaptions>div:last-child:hover{
+  
+    border:none;
+    background-color: aliceblue;
+    padding: 4px;
+    color: #060841;
+
+}
+.headercaptions>div>a:hover{
+    text-decoration: none;
+    color: #060841;
+
 }
 
 .card2{

@@ -2,13 +2,13 @@ import React from 'react'
 
 import ServicesCard from './ServicesCard';
 
-const Consultancy = () => {
+const Consultancy = ({about}) => {
     const CON_DATA = [
         {
           id: "/consultancy/con1",
           title: "Product Visualization & Strategy",
-          image: "/image/supply-chain.svg",
-          hImage:"/image/servieshovericon/co/pvs.svg",
+          image: "/image/servicesicons/supply-chain-1.svg",
+          hImage: "/image/servicesicons/supply-chain.svg",
           bg:"/image/services/2479735.webp",
           discription:
             "We will bring to reality your business ideas by developing your software solutions from scratch. ",
@@ -16,8 +16,8 @@ const Consultancy = () => {
         {
           id: "/consultancy/con2",
           title: "Digital Transformation",
-          image: "/image/network-connection.svg",
-          hImage: "/image/network-connection-white.svg",
+          image: "/image/servicesicons/network-connection-1.svg",
+          hImage: "/image/servicesicons/network-connection.svg",
           bg:"/image/services/dtbg.jpg",
           discription:
             "Our consultants will help you leverage digitization to transform your business to come at par with digital economics.",
@@ -25,10 +25,9 @@ const Consultancy = () => {
         {
           id: "/consultancy/con3",
           title: "Digital Discovery Workshop ",
-          image: "/image/business_factory_location_manufactory_plant_icon.svg",
+          image: "/image/servicesicons/ddw-1.svg",
           hImage:
-          "/image/1530084_business_factory_location_manufactory_plant_icon-white.svg",
-    
+          "/image/servicesicons/ddw.svg",
           bg:"/image/services/ddw.jpg",
           discription:
             "Plan your digital transformation roadmap through 1 week collaborative discovery workshops. ",
@@ -37,7 +36,7 @@ const Consultancy = () => {
       
   return (
     <>
-           <ServicesCard data={CON_DATA}/>
+           <ServicesCard data={CON_DATA} about={about}/>
     </>
   )
 }

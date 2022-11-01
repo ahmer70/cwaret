@@ -63,7 +63,7 @@ function RightPanel({ i }) {
   }, [Message]);
 
   return (
-    <div className="setIndex1">
+    <div className="setIndex1 px-2">
       <div className="setIndex1">
         <h3 className="gradientHeading">Contact Us</h3>
         {/* <h4 className="Contact-Background-Discription">

@@ -10,8 +10,8 @@ const CARD_DATA = [
   {
     id: "c1",
     title: "Oracle Cloud Infrastructure",
-    image: "/image/network.svg",
-    hImage: "/image/network-white.svg",
+    image: "/image/servicesicons/network-1.svg",
+    hImage: "/image/servicesicons/network.svg",
     description:
       "Thinking of shifting to cloud? Let our team of certified developers help you move to the Oracle Cloud Infrastructure.",
     link: "/services/enterprise_solutions/es1",
@@ -19,8 +19,8 @@ const CARD_DATA = [
   {
     id: "c2",
     title: "Custom Software Solutions",
-    image: "/image/layers.svg",
-    hImage: "/image/layers-white.svg",
+    image: "/image/servicesicons/layers.svg",
+          hImage: "/image/servicesicons/layers-1.svg",
     description:
       "Build customized software applications for your startup, SMBs and enterprises.",
     link: "/services/software_development/sd1",
@@ -28,8 +28,8 @@ const CARD_DATA = [
   {
     id: "c3",
     title: "UI/UX Design",
-    image: "/image/ux-design.svg",
-    hImage: "/image/ux-design-white.svg",
+    image: "/image/servicesicons/ux-design-1.svg",
+    hImage:"/image/servicesicons/ux-design.svg",
     description:
       "Let our team of designers and developers help you design your digital product with customer centric approach.",
     link: "/services/software_development/sd2",
@@ -38,8 +38,8 @@ const CARD_DATA = [
   {
     id: "c4",
     title: "Siebel CRM",
-    image: "/image/CRM.svg",
-    hImage: "/image/crm-white.svg",
+    image: "/image/servicesicons/CRM.svg",
+    hImage:  "/image/servicesicons/CRM-1.svg",
     description:
       "Engage our certified experts in business design , development, testing and EAI/EIM development.",
     link: "/services/enterprise_solutions/es2",
@@ -47,8 +47,8 @@ const CARD_DATA = [
   {
     id: "c5",
     title: "Digital Transformation ",
-    image: "/image/network-connection.svg",
-    hImage: "/image/network-connection-white.svg",
+    image: "/image/servicesicons/network-connection-1.svg",
+          hImage: "/image/servicesicons/network-connection.svg",
     description:
       "Our consultants will help you leverage digitization to transform your business to come at par with digital economies.",
     link: "/services/consultancy/con2",
@@ -56,8 +56,8 @@ const CARD_DATA = [
   {
     id: "c6",
     title: "Business Process Outsourcing ",
-    image: "/image/engineering.svg",
-    hImage: "/image/engineering-white.svg",
+    image: "/image/servicesicons/engineering-1.svg",
+    hImage: "/image/servicesicons/engineering.svg",
     description:
       "We enable our client to outperform with technology-based information Technology Enabled Services(ITES) business process outsourcing",
     link: "/services/enterprise_solutions/es5",
@@ -65,9 +65,8 @@ const CARD_DATA = [
   {
     id: "c7",
     title: "Digital Discovery Workshop ",
-    image: "/image/business_factory_location_manufactory_plant_icon.svg",
-    hImage:
-      "/image/1530084_business_factory_location_manufactory_plant_icon-white.svg",
+    image: "/image/servicesicons/ddw-1.svg",
+    hImage:"/image/servicesicons/ddw.svg",
     description:
       "Plan your digital transformation roadmap through 1 week collaborative discovery workshops.",
     link: "/services/consultancy/con3",
@@ -112,7 +111,8 @@ const ServicesCard = ({ offset }) => {
           : "url(/image/services/dtbg2.jpg)"
       }`,
       backgroundColor: "#cccccc",
-      transition: ".8s",
+      transform: "scale(1.08)",
+      transition: ".5s",
 
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",

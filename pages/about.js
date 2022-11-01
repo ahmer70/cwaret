@@ -34,10 +34,10 @@ function AboutPage() {
         <ServicesNav OpenS={OpenS} setOpenS={setOpenS}/>
         </div>
       <div className="container-md mx-auto" >
-      {OpenS==='SD'&&<SoftwareDevelopment/>}
-        {OpenS==='ES'&&<EnterpriseSolutions/>}
-         {OpenS==='ET'&&<EmergingTechnologies />}
-         {OpenS==='C'&&<Consultancy/>}
+      {OpenS==='SD'&&<SoftwareDevelopment about={true}/>}
+        {OpenS==='ES'&&<EnterpriseSolutions about={true}/>}
+         {OpenS==='ET'&&<EmergingTechnologies  about={true}/>}
+         {OpenS==='C'&&<Consultancy about={true}/>}
       </div>
       </div>
       <MainFooter />

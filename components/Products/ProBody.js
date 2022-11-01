@@ -1,11 +1,13 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 import Image from "next/image";
 
 function ProBody() {
   return (
     <>
-      <div className=" position-relative">
+      <>
+        <div className="position-relative">
         <div className="container-md text-start ">
           <h2 className="mb-0" style={{ fontWeight: "400" }}>
             Workspace Collaboration & File Sharing{" "}
@@ -19,7 +21,7 @@ function ProBody() {
           className="bg-secondary position-absolute w-100 bottom-0"
           style={{ height: "50%" }}
         ></span>
-        <div className="  container-md mx-auto  p-2  position-relative">
+        <Fade cascade damping={0.1} direction={"left"} className="  container-md mx-auto  p-2  position-relative">
           <div className="row m-0 mx-auto bg-white shadow rounded p-4">
             <div className="d-flex col-md-6 col-12 flex-column align-items-center">
               <Image
@@ -45,9 +47,9 @@ function ProBody() {
                 multiple devices to teams and organizations of any size.
               </p>
 
-              <button
+              <button type="button"
                 onClick={(e) => window.open("https://www.file-o.com")}
-                className="visit-btn border p-2 rounded px-4"
+                className="linkBtn"
               >
                 {" "}
                 Visit Website
@@ -63,8 +65,10 @@ function ProBody() {
               />
             </div>
           </div>
+        </Fade>
         </div>
-      </div>
+        
+      </>
 
       <div className=" align-items-center bg-secondary pb-5">
         <div className="container-md">
@@ -85,7 +89,7 @@ function ProBody() {
             </div>
           </div>
 
-          <div className="bg-white shadow rounded p-2  mx-auto">
+          <Fade  cascade damping={0.1} direction={"right"} className="bg-white shadow rounded p-2  mx-auto">
             <div className="row m-0  align-items-center ">
               <div className="col-md-5 col-12  align-items-center">
                 <Image
@@ -121,7 +125,7 @@ function ProBody() {
                 </p>
               </div>
             </div>
-          </div>
+          </Fade>
 
           <div className="container-md text-start py-4 ">
             <h2 className="mb-0" style={{ fontWeight: "400" }}>
@@ -136,7 +140,7 @@ function ProBody() {
               }}
             />
           </div>
-          <div className="bg-white shadow rounded p-2 row m-0 mx-auto">
+          <Fade cascade damping={0.1} direction={"left"} className="bg-white shadow rounded p-2 row m-0 mx-auto">
             <div className="row mx-auto m-0 align-items-center ">
               <div className="d-flex col-md-6 col-12 flex-column align-items-center">
                 <Image
@@ -168,7 +172,7 @@ function ProBody() {
                 />
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Gallery from "./Gallery";
 import Card from "react-bootstrap/Card";
+import { Fade } from "react-awesome-reveal";
 
 const PodcastList = ({ data }) => {
   const [show, setShow] = useState(false);
@@ -11,6 +12,7 @@ const PodcastList = ({ data }) => {
       <div className="row m-0 ">
         {data.map((e, index) => (
           <div className="col-md-4 mb-5" key={index}>
+            <>
             <Card className=" shadow h-100">
               <div className="position-relative bg-light">
                 <Image
@@ -23,7 +25,7 @@ const PodcastList = ({ data }) => {
                 />
                 <div className="position-absolute top-0 end-0 text-center  ">
                   <span
-                    className=" px-2 fs-5  top-0 text-center d-flex align-items-center justify-content-center  mb-1"
+                    className=" px-2 fs-6  top-0 text-center d-flex align-items-center justify-content-center  mb-1"
                     style={{
                       backgroundColor: "hsl(240deg 7% 62% / 77%)",
                       width: "fit-content",
@@ -82,6 +84,7 @@ const PodcastList = ({ data }) => {
                 </div>
               </Card.Footer>
             </Card>
+            </>
           </div>
         ))}
       </div>

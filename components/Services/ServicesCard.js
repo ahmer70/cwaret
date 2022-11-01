@@ -1,76 +1,90 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import Card from "react-bootstrap/Card";
 
-const ServicesCard = ({ data }) => {
-  
+const ServicesCard = ({ data,about }) => {
   const [active, setAct] = useState(false);
 
-  
+  const bgset = (bg, index) => {
+    let robg;
 
-const bgset=(bg,index)=>{
+    if (active && active === index) {
+      robg = {
+        backgroundImage: `url(${bg})`,
+        backgroundColor: "#cccccc",
+        transition: ".8s",
+        // opacity: "1",
+        // filter: "grayscale(80%)",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        color: "white",
+      };
+    } else {
+      robg = {
+        backgroundColor: `${about?"white":"rgb(220 220 224 / 66%)"}`,
+      };
+    }
 
-  let robg;
-
-if (active&&active===index) {
-  
-  robg = {
-    backgroundImage: `url(${bg})`,
-    backgroundColor: "#cccccc",
-    transition: ".8s",
-    // opacity: "1",
-    // filter: "grayscale(80%)",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    color:"white"
+    return robg;
   };
- 
-} else {
-  robg = {
-    backgroundColor: "hsl(240deg 6% 87%)",
-  };
-}
-
-return robg
-}
   return (
-    <div className="row m-0  setIndex1 ">
-      <div className="col-md-10 m-0 p-0 mx-auto text-center">
-        <div className="row m-0 ">
+    <div className="container-md  setIndex1 pb-5 ">
+      <>
+        <div className="row m-0  ">
           {data.map((e, index) => (
-            <div className="col-md-4 p-0 p-2 " key={index} >
-              <div className="position-relative" onMouseEnter={() => setAct(index===0?100:index)}
-            onMouseLeave={() => setAct(false)}>
-              <div
-                className=" p-3 rounded "
-                
-                style={{
-                    height: "300px",
-                  boxShadow: "5px 5px 4px 1px hsl(240deg 8% 46% / 53%)",
-                  ...bgset(e.bg,index===0?100:index)
-                }}
+            <div className="col-md-4 p-0 p-3 text-center  " key={index}>
+              <Link href={`/services${e.id}` } 
+                className="position-relative text-center text-decoration-none text-secondary"
+                onMouseEnter={() => setAct(index === 0 ? 100 : index)}
+                onMouseLeave={() => setAct(false)}
               >
-                <Image src={active===(index===0?100:index)?e.hImage:e.image} width={40} height={40} alt={e.title} />
-                <p style={{ fontSize: "20px" }}>{e.title}</p>
-                <p>{e.discription}</p>
-
-                
-              </div>
-              <div className="position-absolute bottom-0 w-100 mx-auto mb-4 text-center text-decoration-none">
-                <Link href={`/services${e.id}`} className={`${active===(index===0?100:index)?"text-white":""} text-decoration-none`}>
+                <Card
+                  className=" p-3 rounded text-center border-0"
+                  style={{
+                    height: "300px",
+                    boxShadow: "rgb(108 108 127 / 38%) 4px 4px 4px 1px",
+                    ...bgset(e.bg, index === 0 ? 100 : index),
+                  }}
+                >
+                  <div className="d-flex justify-content-center">
+                  <Image
+                    src={
+                      active === (index === 0 ? 100 : index)
+                        ? e.hImage
+                        : e.image
+                    }
+                    width={40}
+                    height={40}
+                    alt={e.title}
+                    className="mb-3 text-center "
+                  />
+                  </div>
+                  <p style={{ fontSize: "20px" }}>{e.title}</p>
+                  <Card.Body>
               
+                  <p>{e.discription}</p>
+                  </Card.Body>
+                  <Card.Footer className="border-0 m-0 p-0 bg-transparent text-center">
+
+                  <p
+                    
+                    className={`${
+                      active === (index === 0 ? 100 : index) ? "text-white" : ""
+                    } m-0 p-0`}
+                  >
                     Read More <BsArrowRight />
-                 
-                </Link>
-                </div>
-              </div>
-           
+                  </p>
+                  </Card.Footer>
+                </Card>
+                
+              </Link>
             </div>
           ))}
         </div>
-      </div>
+      </>
     </div>
   );
 };

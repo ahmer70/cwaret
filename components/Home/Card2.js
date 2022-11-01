@@ -25,7 +25,7 @@ const Card2 = () => {
               talent. Increase quality and efficiency and retain complete
               control of teams.
             </p>
-            <Link href="/contactus">
+            <Link href="/contact">
              
                 BUILD YOUR TEAM <BsArrowRight />
            
@@ -48,7 +48,7 @@ const Card2 = () => {
               Get a comprehensive product development experience from design to
               delivery with reduced development costs.
             </p>
-            <Link href="/contactus">
+            <Link href="/contact">
          
                 DEVELOP YOUR PRODUCT <BsArrowRight />
             
