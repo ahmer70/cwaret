@@ -127,7 +127,7 @@ console.log("active",array['c1'])
           ? "url(/image/services/dtbg2.jpg)"
           : "url(/image/services/dtbg2.jpg)"
       }`,
-    
+      backgroundColor: "#ebf4fa",
  
      
       transform: `scale(${sc})`,
