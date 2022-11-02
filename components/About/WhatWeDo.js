@@ -31,12 +31,12 @@ const WhatWeDo = () => {
         </div>
       </div>
       <div className="gradientbg rounded">
-        <div className="row p-0 m-0">
-          <div className="col-md-5 mx-auto d-flex justify-content-between py-3 text-center align-items-center">
-            <div>
+        <div className="container-md mx-auto text-center">
+        <div className="row m-0 p-4 align-items-center">
+          <div className="col-sm-7 p-0 m-0 text-center">
               <h3>Ready to Start your Project?</h3>
             </div>
-            <div>
+            <div className="col-sm-3  p-0 m-0">
               <Link href={"/contact"} className="text-decoration-none text-white ltabout  ">
                 
                   Let&#39;s Talk

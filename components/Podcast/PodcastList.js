@@ -41,10 +41,13 @@ const PodcastList = ({ data }) => {
                     {e.heading}
                   </span>
                 </div></div>
-               <div className="p-3">
-               <h5 className="mb-0 text-center " style={{ fontWeight: 500 }}>
+               <div className="px-3 pb-3">
+                <div className=" d-flex align-items-center "  style={{ height:"105px"}}>
+                <h5 className="mb-0 text-center d-flex align-items-center " style={{ fontWeight: 500 ,height:"105px"}}>
                   {e.title}
                 </h5>
+                </div>
+              
                 <hr
                   className="text-center d-flex justify-content-between   mt-0 px-5"
                   style={{

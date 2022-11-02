@@ -166,13 +166,13 @@ function RightPanel({ i }) {
             />
           </div>
         </div>
-        <div className="row m-0">
+        <div className="row m-0 mx-auto">
           <div className="col-md-2"></div>
-          <div className="col-md-10">
+          <div className="col-md-10 mx-auto text-center">
             <input
               type="submit"
               value="Send Message"
-              className="mt-5 col-lg-4 col-12 p-2  contact-messagebox-input rounded"
+              className="mt-5 col-lg-4 col-12 p-2  text-center contact-messagebox-input rounded"
             />
           </div>
         </div>

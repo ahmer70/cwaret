@@ -140,7 +140,7 @@ let list = [
   },
 ];
 const Podcast = () => {
-  var today = new Date("2021-10-06"); // yyyy-mm-dd
+  var today = new Date("2022-11-02"); // yyyy-mm-dd
   var month = today.toJSON().split("T");
   console.log("month", month);
   return (
