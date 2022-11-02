@@ -51,15 +51,15 @@ const EnterpriseSolutions = ({about}) => {
           discription:
             "Focus on your core business activities and let your secondary business activities be taken care by our strong processes.",
         },
-        {
-          id: "/enterprise_solutions/es6",
-          title: "Support 24/7",
-          image: "/image/servicesicons/call-center.svg",
-          hImage:"/image/servicesicons/call-center-1.svg",
-          bg:"/image/services/Screenshot_1.png",
-          discription:
-            "Hire our dedicated team to support your Enterprise related IT issues.",
-        },
+        // {
+        //   id: "/enterprise_solutions/es6",
+        //   title: "Support 24/7",
+        //   image: "/image/servicesicons/call-center.svg",
+        //   hImage:"/image/servicesicons/call-center-1.svg",
+        //   bg:"/image/services/Screenshot_1.png",
+        //   discription:
+        //     "Hire our dedicated team to support your Enterprise related IT issues.",
+        // },
       ];
   return (
     <>

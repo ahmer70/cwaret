@@ -80,12 +80,7 @@ const ServicesList = () => {
       image: "/image/servicesicons/engineering-1.svg",
       hImage: "/image/servicesicons/engineering.svg",
     },
-    {
-      id: "/enterprise_solutions/es6",
-      title: "Support 24/7",
-      image: "/image/servicesicons/call-center.svg",
-      hImage: "/image/servicesicons/call-center-1.svg",
-    },
+  
   ];
 
   const ET_DATA = [
@@ -147,13 +142,13 @@ const ServicesList = () => {
             <div className="col-md-3 " key={index}>
               <div
                 href={e.id}
-                className={`rounded p-2 ${style.servicelink}`}
+                className={`rounded  ${style.servicelink}`}
                 onMouseEnter={() => setItems({ [index]: true })}
                 onMouseLeave={() => setItems(null)}
               >
                 <Link
                   href={`/services${e.id}`}
-                  className={`text-decoration-none `}
+                  className={`text-decoration-none p-2 d-flex align-items-center justify-content-between flex-column`}
                 >
                   <Image
                     src={Items && Items[index] ? e.hImage : e.image}
@@ -185,13 +180,13 @@ const ServicesList = () => {
           {ES_DATA.map((e, index) => (
             <div className="col-md-3" key={index}>
               <div
-                className={`rounded p-2 ${style.servicelink}`}
+                className={`rounded  ${style.servicelink}`}
                 onMouseEnter={() => setES({ [index]: true })}
                 onMouseLeave={() => setES(null)}
               >
                 <Link
                   href={`/services${e.id}`}
-                  className={`text-decoration-none `}
+                  className={`text-decoration-none p-2 d-flex align-items-center justify-content-between flex-column`}
                 >
                   <Image
                     src={ES && ES[index] ? e.hImage : e.image}
@@ -227,10 +222,10 @@ const ServicesList = () => {
               onMouseEnter={() => setET({ [index]: true })}
               onMouseLeave={() => setET(null)}
             >
-              <div className={`rounded p-2 ${style.servicelink}`}>
+              <div className={`rounded  ${style.servicelink}`}>
                 <Link
                   href={`/services${e.id}`}
-                  className={`text-decoration-none `}
+                  className={`text-decoration-none p-2 d-flex align-items-center justify-content-between flex-column`}
                 >
                   <Image
                     src={ET && ET[index] ? e.hImage : e.image}
@@ -266,10 +261,10 @@ const ServicesList = () => {
               onMouseEnter={() => setCS({ [index]: true })}
               onMouseLeave={() => setCS(null)}
             >
-              <div className={`rounded p-2 ${style.servicelink}`}>
+              <div className={`rounded  ${style.servicelink}`}>
                 <Link
                   href={`/services${e.id}`}
-                  className={`text-decoration-none `}
+                  className={`text-decoration-none p-2 d-flex align-items-center justify-content-between flex-column`}
                 >
                   <Image
                     src={CS && CS[index] ? e.hImage : e.image}

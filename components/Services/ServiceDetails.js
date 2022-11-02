@@ -15,7 +15,7 @@ const ServiceDetails = ({ data, subData ,cons}) => {
         </div>
       </div>
       <div className="row m-0 shadow bg-white setIndex1 p-2 text-center rounded my-2 align-items-center">
-        <div className="col-md-8 text-secondary fs-5 ">
+        <div className="col-md-8 p-md-4 text-secondary  ">
           <p>{data.para1}</p>
           {data.para2 && <p>{data.para2}</p>}
           {data.para3 && <p>{data.para3}</p>}
@@ -39,7 +39,7 @@ const ServiceDetails = ({ data, subData ,cons}) => {
                 >
                   <Image src={e.image} width={40} height={40} alt={e.title} />
                   <p style={{ fontSize: "20px",color:"#000460" }}>{e.title}</p>
-                  <p className="text-secondary fs-5">{e.discription}</p>
+                  <p className="text-secondary ">{e.discription}</p>
                 </div>
               </div>
               <div className="position-absolute bottom-0 w-100 mx-auto mb-4 text-center text-decoration-none">
@@ -70,7 +70,7 @@ const ServiceDetails = ({ data, subData ,cons}) => {
                 >
                   <Image src={e.logo} width={40} height={40} alt={e.logo} />
                   <p style={{ fontSize: "20px",color:"#000460" }}>{e.title}</p>
-                  {e.para1&&<p className="text-secondary fs-5">{e.para1}</p>}
+                  {e.para1&&<p className="text-secondary ">{e.para1}</p>}
                 </div>
               </div>
              

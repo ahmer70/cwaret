@@ -1,7 +1,19 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/about": "pages/about.html",
+  "/home": "pages/home.html",
+  "/podcast": "pages/podcast.html",
+  "/": "pages/index.html",
+  "/products": "pages/products.html",
+  "/services/dedicated_teams": "pages/services/dedicated_teams.html",
+  "/services": "pages/services.html",
+  "/services/emerging_technologies/[slug]": "pages/services/emerging_technologies/[slug].js",
+  "/api/hello": "pages/api/hello.js",
+  "/contact": "pages/contact.html",
+  "/services/software_development/[slug]": "pages/services/software_development/[slug].js",
+  "/services/enterprise_solutions/[slug]": "pages/services/enterprise_solutions/[slug].js",
+  "/services/consultancy/[slug]": "pages/services/consultancy/[slug].js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/about": "pages/about.js"
+  "/404": "pages/404.html"
 }
