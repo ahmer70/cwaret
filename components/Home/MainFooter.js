@@ -6,7 +6,7 @@ import Image from "next/image";
 function MainFooter() {
   return (
     < >
-      <Fade cascade damping={0.1} direction={"down"}>
+      <>
       <footer className="home-footer position-relative " style={{ zIndex: 1 }}>
         <div className="home-footer-primary col-lg-4 col-12">
           <h5 className="home-footer-primary-tile">
@@ -81,7 +81,7 @@ function MainFooter() {
           </form>
         </div>
       </footer>
-      </Fade>
+      </>
       <div className="home-footer-copywright">
         {" "}
         <p>

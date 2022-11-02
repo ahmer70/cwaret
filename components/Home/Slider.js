@@ -10,7 +10,7 @@ const Slider = () => {
 
   return (
     <div className={`${style.setBg} position-relative d-flex align-items-center rounded` }  style={{zIndex:1}} >
-        <Marquee  speed={200} pauseOnClick={true} pauseOnHover={true}>
+        <Marquee  speed={100} pauseOnClick={true} pauseOnHover={true}>
   <div className='m-3'><Image src="/image/Image1.png" width={500} height={300} alt="project_image"/></div>
   <div className='m-3'><Image src="/image/Image2.png" width={500} height={300} alt="project_image"/></div>
   <div className='m-3'><Image src="/image/Image3.png" width={500} height={300} alt="project_image"/></div>

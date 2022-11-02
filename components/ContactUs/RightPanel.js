@@ -65,7 +65,7 @@ function RightPanel({ i }) {
   return (
     <div className="setIndex1 px-2">
       <div className="setIndex1">
-        <h3 className="gradientHeading">Contact Us</h3>
+        <h4 className="gradientHeading2">Contact Us</h4>
         {/* <h4 className="Contact-Background-Discription">
               Fill up the form and our team will get <br />
               back to you within 24 hours

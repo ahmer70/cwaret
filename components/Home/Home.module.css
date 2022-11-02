@@ -1,107 +1,106 @@
-.header{
-    background-image: linear-gradient(to bottom right, black, #000460);
-    height: 500px;
-    width: 100%;
-    position: relative;
-    
+.header {
+  background-image: linear-gradient(to bottom right, black, #000460);
+  height: 500px;
+  width: 100%;
+  position: relative;
 }
 
-.headercaptions{
-/* From https://css.glass */
+.headercaptions {
+  /* From https://css.glass */
 
   padding: 50px 60px;
-  
- 
-background: rgb(80 80 80 / 19%);
-border-radius: 10px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-color: white;
 
+  background: rgb(80 80 80 / 19%);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
 }
 
-.headercaptions>div>p{
-    font-size: 30px;
+.headercaptions > div > p {
+  font-size: 30px;
 }
-.headercaptions>div>a{
-    text-decoration: none;
-    color: white;
-
-}
-
-.headercaptions{
-    margin-top: 23px;
-    text-decoration: none;
-
-    border-radius: 5px;
-    color: white;
-   
- 
-    padding: 30px 30px;
+.headercaptions > div > a {
+  text-decoration: none;
+  color: white;
 }
 
-.headercaptions>div:last-child{
-  
-    margin-top: 23px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    width: 150px;
-    text-align: center;
-    padding: 4px;
-}
-.headercaptions>div:last-child:hover{
-  
-    border:none;
-    background-color: aliceblue;
-    padding: 4px;
-    color: #060841;
+.headercaptions {
+  margin-top: 23px;
+  text-decoration: none;
 
-}
-.headercaptions>div>a:hover{
-    text-decoration: none;
-    color: #060841;
+  border-radius: 5px;
+  color: white;
 
+  padding: 30px 30px;
 }
 
-.card2{
-    margin: 68px auto;
-    width: 75%;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    
+.headercaptions > div:last-child {
+  margin-top: 27px;
+  cursor: pointer;
+  text-decoration: none;
+
+  color: white;
+  width: 35%;
+  text-align: center;
 }
 
-.card2>div>div{
-    padding: 17px;
-    
-}
-.card2>div>div>div{
-    padding: 40px;
-    text-align: center;
-    background-color: hsl(240deg 6% 87% / 39%);
-    box-shadow: 5px 5px 4px 1px hsl(240deg 8% 46% / 53%);
-    height: 300px;
-    transition: .5s;
-    border-radius: 6px;
-}
-.card2>div>div>div:hover{
+.headercaptions > div > a {
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
 
-    /* background-color: hsl(240deg 6% 87% / 39%); */
-    background-image: linear-gradient(to right, #000460 , #0071BC);
-    transition: .5s;
- color: white;
-}
-.card2>div>div>div:hover a{
-
-  
- color: white;
+  text-align: center;
+  padding: 8px 30px;
 }
 
-.card2>div>div>div>a{
-    text-decoration: none;
+.headercaptions > div > a:hover {
+  border: none;
+  background-color: aliceblue;
+
+  color: #060841;
+}
+
+.card2 {
+  margin: 68px auto;
+  width: 75%;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card2 > div > div {
+  padding: 17px;
+}
+.card2 > div > div > div > a {
+  padding: 40px;
+}
+
+.card2 > div > div > div {
+  text-align: center;
+  background-color: hsl(240deg 6% 87% / 39%);
+  box-shadow: 5px 5px 4px 1px hsl(240deg 8% 46% / 53%);
+  height: 300px;
+  transition: 0.5s;
+  border-radius: 6px;
+}
+.card2 > div > div > div:hover {
+  /* background-color: hsl(240deg 6% 87% / 39%); */
+  background-image: linear-gradient(to right, #000460, #0071bc);
+  transition: 0.5s;
+  color: white;
+}
+
+.card2 > div > div > div a {
+  color: black;
+}
+.card2 > div > div > div:hover a {
+  color: white;
+}
+
+.card2 > div > div > div > a {
+  text-decoration: none;
 }

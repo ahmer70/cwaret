@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { Fade } from "react-awesome-reveal";
+import {Zoom} from 'react-awesome-reveal';
 const CARD_DATA = [
   {
     id: "c1",
@@ -87,42 +88,52 @@ const CARD_DATA = [
 const ServicesCard = ({ offset }) => {
   const [active, setAct] = useState(false),
     [actRow, setActRow] = useState(false);
-
+let array={
+  c1:"/image/services/ocibg.jpg",
+  c2:"/image/services/cssbg.jpg",
+  c3:"/image/services/uiuxbg.png",
+  c4:"/image/services/crmbg.jpg",
+  c5:"/image/services/dtbg.jpg",
+  c6:"/image/services/pbobg.jpg",
+  c7:"/image/services/ddw.jpg",
+  c8:"/image/services/dtbg2.jpg"
+}
+console.log("active",array['c1'])
   let robg;
-  if (active) {
-    robg = {
-      backgroundImage: `${
-        active === "c1"
-          ? "url(/image/services/ocibg.jpg)"
-          : active === "c2"
-          ? "url(/image/services/cssbg.jpg)"
-          : active === "c3"
-          ? "url(/image/services/uiuxbg.png)"
-          : active === "c4"
-          ? "url(/image/services/crmbg.jpg)"
-          : active === "c5"
-          ? "url(/image/services/dtbg.jpg)"
-          : active === "c6"
-          ? "url(/image/services/pbobg.jpg)"
-          : active === "c7"
-          ? "url(/image/services/ddw.jpg)"
-          : active === "c8"
-          ? "url(/image/services/dtbg2.jpg)"
-          : "url(/image/services/dtbg2.jpg)"
-      }`,
-      backgroundColor: "#cccccc",
+  // if (active) {
+  //   robg = {
+  //     backgroundImage: `${
+  //       active === "c1"
+  //         ? "url(/image/services/ocibg.jpg)"
+  //         : active === "c2"
+  //         ? "url(/image/services/cssbg.jpg)"
+  //         : active === "c3"
+  //         ? "url(/image/services/uiuxbg.png)"
+  //         : active === "c4"
+  //         ? "url(/image/services/crmbg.jpg)"
+  //         : active === "c5"
+  //         ? "url(/image/services/dtbg.jpg)"
+  //         : active === "c6"
+  //         ? "url(/image/services/pbobg.jpg)"
+  //         : active === "c7"
+  //         ? "url(/image/services/ddw.jpg)"
+  //         : active === "c8"
+  //         ? "url(/image/services/dtbg2.jpg)"
+  //         : "url(/image/services/dtbg2.jpg)"
+  //     }`,
+  //     backgroundColor: "#cccccc",
  
-      transition: ".5s",
+     
 
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-    };
-  } else {
-    robg = {
-      backgroundColor: "#ebf4fa",
-    };
-  }
+  //     backgroundPosition: "center",
+  //     backgroundRepeat: "no-repeat",
+  //     backgroundSize: "cover",
+  //   };
+  // } else {
+  //   robg = {
+  //     backgroundColor: "#ebf4fa",
+  //   };
+  // }
 
   return (
     <div className={`${style.services} mx-auto container-md`}>
@@ -140,6 +151,30 @@ const ServicesCard = ({ offset }) => {
         onMouseEnter={() => setActRow(true)}
         onMouseLeave={() => setActRow(false)}
       >
+        {!active?<span className="w-100 h-100  position-absolute" style={{zIndex:-1,backgroundColor: "#ebf4fa"}}></span>
+        :<>
+        {active==='c1'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/ocibg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}
+          {active==='c2'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/cssbg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}{active==='c3'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/uiuxbg.png"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}{active==='c4'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/crmbg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}{active==='c5'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/dtbg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}{active==='c6'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/pbobg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}{active==='c7'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/ddw.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}{active==='c8'&&<Zoom cascade className="w-100 h-100  position-absolute" style={{zIndex:-1}}>
+          <Image src={"/image/services/dtbg2.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
+          </Zoom>}
+        
+        </>}
+        
+
         <div className={` row ${style.cardRow1}  m-0`}>
           {CARD_DATA.slice(0, 4).map((e, index) => (
             <div

@@ -132,6 +132,13 @@ margin: 0 auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }  
+.gradientHeading2{
+  font-size: 52px;
+  /* background: linear-gradient(to right,#000460, #0071BC); */
+  background: linear-gradient(to left, #000460 0%, #0071BC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .contact-messagebox-input{
   background-image: linear-gradient(to right, #000460 , #0071BC );
@@ -165,4 +172,35 @@ font-size: 18px;
 
   border:  1px solid #000460;
 
+}
+
+
+
+.ltabout{
+  background-image: transparent;
+  background-color: transparent;
+  color: white;
+  border:  1px solid white!important;
+  border-radius: 3px;
+padding:5px 20px ;
+font-size: 18px;
+
+  border:  1px solid #000460;
+
+}
+.ltabout:hover{
+  background-image: linear-gradient(to right, #070a4d , #0e0561 );
+  color: #000460;
+  border:  none!important;
+  
+  transition: .8s;
+  font-size: 18px;
+}
+
+.accohead>button{
+  margin: 0!important;
+  padding: 0!important;
+  border: none!important;
+  outline: none!important;
+  box-shadow: none!important;
 }

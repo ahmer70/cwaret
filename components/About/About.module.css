@@ -6,16 +6,16 @@
     
     }
     
-    .cardCol>a{
+    .cardCol>div>a{
        
         text-decoration: none;
     }
-    .cardCol>a>p:last-child{
+    .cardCol>div>a>p:last-child{
         color: gray;
        
     }
     
-    .cardCol>a>p:first-child{
+    .cardCol>div>a>p:first-child{
         color: #4797FF;
        
     }

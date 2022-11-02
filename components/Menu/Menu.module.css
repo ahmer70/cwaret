@@ -28,7 +28,7 @@ backdrop-filter: blur(5px);
     /* background-color: #80808066; */
   
     color: white;
-    /* width: 10%; */
+    width: 15%;
     text-align: center;
     /* align-items: center; */
     border-radius: 4px;
@@ -109,4 +109,28 @@ backdrop-filter: blur(5px);
   /* Handle on hover */
   .servicesArrow::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(to right, #000460, #1339a3);
+  }
+  .dtservices{
+    display: block;
+  }
+  .mbservices{
+    display: none;
+  }
+  @media screen and (max-width:776px) {
+    .contactusbtn{
+      color: black;
+    }
+    .contactusbtn:hover{
+        color: black;
+    
+      }
+      .contactusdiv{
+        width: 100%;
+      }
+      .dtservices{
+        display: none;
+      }
+      .mbservices{
+        display: block;
+      }
   }

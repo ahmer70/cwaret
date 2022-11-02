@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import style from "./About.module.css";
-
+import { Fade } from "react-awesome-reveal";
 const ValuesComponent = () => {
   let DATA = [
     {
@@ -42,13 +42,15 @@ const ValuesComponent = () => {
                 className={`col-md-4 p-4 text-center ${style.cardCol}`}
                 key={index}
               >
+                <Fade cascade direction={index===0?"top-left":index===1?"up":"top-right"}>
                 <Link href={`${e.link}`}>
                
-                    <Image src={e.image} width={40} height={40} alt={e.title} />
-                    <p>{e.title}</p>
+                    <Image src={e.image} width={40} height={40} alt={e.title} className="mb-2"/>
+                    <p >{e.title}</p>
                     <p>{e.description}</p>
                  
                 </Link>
+                </Fade>
               </div>
             ))}
           </div>

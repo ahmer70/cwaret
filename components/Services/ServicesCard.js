@@ -42,9 +42,9 @@ const ServicesCard = ({ data,about }) => {
                 onMouseLeave={() => setAct(false)}
               >
                 <Card
-                  className=" p-3 rounded text-center border-0"
+                  className=" p-3 rounded text-center border-0 h-100"
                   style={{
-                    height: "300px",
+                    
                     boxShadow: "rgb(108 108 127 / 38%) 4px 4px 4px 1px",
                     ...bgset(e.bg, index === 0 ? 100 : index),
                   }}

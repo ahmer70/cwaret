@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./About.module.css";
+import { Fade } from "react-awesome-reveal";
 const TopPanel = () => {
   return (
    <>
@@ -18,6 +19,7 @@ const TopPanel = () => {
       <div className="col-md-9 py-4 px-5 mx-auto text-center p-0 m-0 shadow rounded">
         
         <p className="borderHeading mb-4">Company</p>
+        <Fade cascade direction="up">
         <h6 className="text-secondary">
         Cware Technologies is an independent IT Consulting and Engineering organization headquartered in Islamabad, Pakistan with Sales offices in Middle East.
 
@@ -25,6 +27,8 @@ const TopPanel = () => {
         <h6 className="text-secondary">
         We present comprehensive tools and services to wide-ranging business so that anyone, novice or expert, can leverage technology and thrive. We help organization&#39;s re-engineer themselves to ever changing customer requirements.
         </h6>
+        </Fade>
+     
       </div>
     </div>
 

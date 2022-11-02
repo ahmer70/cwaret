@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const WhatWeDo = () => {
   return (
@@ -8,6 +9,7 @@ const WhatWeDo = () => {
         <div className="col-md-9 py-4 px-5 mx-auto text-center p-0 m-0 ">
           <p className="borderHeading mb-4">What We Do?</p>
           <div className="shadow rounded bg-white p-4">
+            <Fade cascade direction="up">
             <h6 className="mb-3">
               In today&#39;s competing business world it is impossible to succeed
               without knowing your customer well. With our specialized customer
@@ -23,6 +25,8 @@ const WhatWeDo = () => {
               the payroll, attendance and files within organization is as easy
               and as you like them to be.{" "}
             </h6>
+            </Fade>
+           
           </div>
         </div>
       </div>
@@ -33,7 +37,7 @@ const WhatWeDo = () => {
               <h3>Ready to Start your Project?</h3>
             </div>
             <div>
-              <Link href={"/contact"} className="text-decoration-none text-white border rounded p-2 px-3">
+              <Link href={"/contact"} className="text-decoration-none text-white ltabout  ">
                 
                   Let&#39;s Talk
                 
