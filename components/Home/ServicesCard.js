@@ -131,7 +131,7 @@ console.log("active",array['c1'])
  
      
       transform: `scale(${sc})`,
-      transition:".5s",
+      // transition:".5s",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
