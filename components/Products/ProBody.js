@@ -7,7 +7,7 @@ function ProBody() {
   return (
     <>
       <>
-        <div className="position-relative">
+        <div className="position-relative setIndex1">
         <div className="container-md text-start ">
           <h2 className="mb-0" style={{ fontWeight: "400" }}>
           First ever SDG Tracker of Pakistan
@@ -18,8 +18,8 @@ function ProBody() {
           />
         </div>
         <span
-          className="bg-secondary position-absolute w-100 bottom-0"
-          style={{ height: "50%" }}
+          className=" position-absolute w-100 bottom-0"
+          style={{ height: "50%",backgroundColor:"hsl(0deg 0% 0% / 10%)" }}
         ></span>
         <Fade cascade damping={0.1} direction={"right"} className="  container-md mx-auto  p-2  position-relative">
           <div className="row m-0 mx-auto bg-white shadow rounded p-4">
@@ -66,7 +66,7 @@ function ProBody() {
         
       </>
 
-      <div className=" align-items-center bg-secondary pb-5">
+      <div className=" align-items-center  pb-5 setIndex1" style={{backgroundColor:"hsl(0deg 0% 0% / 10%)"}}>
         <div className="container-md">
 
         <div className="d-flex justify-content-end flex-row p-4 position-relative">

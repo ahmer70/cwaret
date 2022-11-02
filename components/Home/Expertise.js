@@ -44,7 +44,7 @@ const Expertise = () => {
   ];
 
   return (
-    <div className={`${style.services} mx-auto`}>
+    <div className={`${style.services} mx-auto setIndex1`}>
       <div className={`${style.serviceHead} mx-auto text-center`}>
         <p>Our Expertise</p>
         <p>
@@ -59,7 +59,7 @@ const Expertise = () => {
       >
         {EXPERTISE_DATA.slice(0, 3).map((e, index) => (
           <div
-            className={`col-md-4 mx-auto text-center ${style.cardCol}`}
+            className={`col-md-4 mx-auto mb-2 text-center ${style.cardCol}`}
             key={index}
           >
             <Fade cascade damping={0.1} direction={index===0?"left":index===1?"up":index===2?"right":"down"}>
@@ -77,7 +77,7 @@ const Expertise = () => {
       <div className={` row  m-0  `}>
         {EXPERTISE_DATA.slice(3, 6).map((e, index) => (
           <div
-            className={`col-md-6 mx-auto text-center ${style.cardCol} `}
+            className={`col-md-6 mx-auto mb-2 text-center ${style.cardCol} `}
             key={index}
           >
             <Fade cascade damping={0.1} direction={index===0?"left":"right"}  className={`${style.Exp2ndCardCol}`}>

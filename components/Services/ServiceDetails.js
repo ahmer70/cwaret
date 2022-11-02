@@ -14,7 +14,7 @@ const ServiceDetails = ({ data, subData ,cons}) => {
           <h3 className="m-0 ms-4">{data.title}</h3>
         </div>
       </div>
-      <div className="row m-0 shadow p-2 text-center rounded my-2 align-items-center">
+      <div className="row m-0 shadow bg-white setIndex1 p-2 text-center rounded my-2 align-items-center">
         <div className="col-md-8 text-secondary fs-5 ">
           <p>{data.para1}</p>
           {data.para2 && <p>{data.para2}</p>}
@@ -31,7 +31,7 @@ const ServiceDetails = ({ data, subData ,cons}) => {
             <div className="col-md-4 mx-auto p-0 position-relative" key={index}>
               <div className="p-2">
                 <div
-                  className=" p-3 rounded shadow "
+                  className=" p-3 rounded shadow bg-white setIndex1 "
                   style={{
                     height: "300px",
                    

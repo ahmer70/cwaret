@@ -30,19 +30,19 @@ const Clients = ({ about }) => {
     },
   ];
   return (
-    <div className={`${style.services} mx-auto mb-5 container-md`}>
+    <div className={`${style.services} mx-auto mb-5 container-md `}>
       <div className={`${style.serviceHead} mx-auto text-center`}>
         <p>Our Clients </p>
       </div>
 
       <div
-        className={`row m-0 mx-auto text-center ${
-          about ? "rounded shadow bg-white py-4  px-2 mt-3 " : "pt-4"
-        }  `}
+        className={`row m-0 mx-auto text-center  ${
+          about ? "rounded shadow  bg-white py-4  px-2 mt-3 " : "pt-4"
+        }  `} style={{}} 
       >
         {arr.map((e, index) => (
-          <Rotate cascade damping={0.1} duration={2000} className="col" key={index}>
-            <div   className="rounded shadow p-3" style={{ height: "130px" }}>
+          <Rotate cascade damping={0.1} duration={2000} className="col " key={index}>
+            <div   className="rounded shadow p-3 bg-white setIndex1" style={{ height: "130px" }}>
              
              <Image src={e.image} width={100} height={50} alt={e.image} />
               <h6>{e.name}</h6>

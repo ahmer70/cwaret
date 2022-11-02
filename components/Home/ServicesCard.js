@@ -158,28 +158,7 @@ console.log("active",array['c1'])
         onMouseEnter={() => setActRow(true)}
         onMouseLeave={() => setActRow(false)}
       >
-        {/* {!active?<span className="w-100 h-100  position-absolute" style={{zIndex:-1,backgroundColor: "#ebf4fa"}}></span>
-        :<>
-        {active==='c1'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}} >
-          <Image src={"/image/services/ocibg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}
-          {active==='c2'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/cssbg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}{active==='c3'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/uiuxbg.png"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}{active==='c4'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/crmbg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}{active==='c5'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/dtbg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}{active==='c6'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/pbobg.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}{active==='c7'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/ddw.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}{active==='c8'&&<div  className="w-100 h-100  position-absolute" style={{zIndex:-1,transform: "scale(1.01)",transition:"0.5s"}}>
-          <Image src={"/image/services/dtbg2.jpg"} width={800} height={800} alt="bgiamge" className="w-100 h-100" />
-          </div>}
-        
-        </>} */}
+  
         
 
         <div className={` row ${style.cardRow1}  m-0`}>

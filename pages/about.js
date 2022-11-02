@@ -20,7 +20,7 @@ function AboutPage() {
       <div className="container-md mt-4">
         <TopPanel />
       </div>
-      <div className="bg-secondary">
+      <div className="" style={{backgroundColor: "hsl(0deg 0% 0% / 10%)",}}>
         <WhatWeDo />
         <div className="container-md mx-auto mt-3 setIndex1">
           <Clients about={true} />

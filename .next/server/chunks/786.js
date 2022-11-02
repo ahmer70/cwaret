@@ -254,14 +254,23 @@ const ServicesCard = ({ data , about  })=>{
                             onMouseEnter: ()=>setAct(index === 0 ? 100 : index),
                             onMouseLeave: ()=>setAct(false),
                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_5___default()), {
-                                className: " p-3 rounded text-center border-0 h-100",
+                                className: " p-3 rounded text-center position-relative border-0 h-100",
                                 style: {
                                     boxShadow: "rgb(108 108 127 / 38%) 4px 4px 4px 1px",
                                     ...bgset(e.bg, index === 0 ? 100 : index)
                                 },
                                 children: [
+                                    active === (index === 0 ? 100 : index) && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                        className: "w-100 h-100 position-absolute top-0 start-0 rounded",
+                                        style: {
+                                            backgroundColor: "#235374a8"
+                                        }
+                                    }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "d-flex justify-content-center",
+                                        className: "d-flex justify-content-center position-relative",
+                                        style: {
+                                            zIndex: 1
+                                        },
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
                                             src: active === (index === 0 ? 100 : index) ? e.hImage : e.image,
                                             width: 40,
@@ -271,20 +280,29 @@ const ServicesCard = ({ data , about  })=>{
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "position-relative",
                                         style: {
-                                            fontSize: "20px"
+                                            fontSize: "20px",
+                                            zIndex: 1
                                         },
                                         children: e.title
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_5___default().Body), {
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: "position-relative",
+                                            style: {
+                                                zIndex: 1
+                                            },
                                             children: e.discription
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_5___default().Footer), {
                                         className: "border-0 m-0 p-0 bg-transparent text-center",
                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: `${active === (index === 0 ? 100 : index) ? "text-white" : ""} m-0 p-0`,
+                                            className: `${active === (index === 0 ? 100 : index) ? "text-white" : ""} m-0 p-0 position-relative`,
+                                            style: {
+                                                zIndex: 1
+                                            },
                                             children: [
                                                 "Read More ",
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_4__.BsArrowRight, {})

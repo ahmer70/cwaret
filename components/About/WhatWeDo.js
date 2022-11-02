@@ -30,7 +30,7 @@ const WhatWeDo = () => {
           </div>
         </div>
       </div>
-      <div className="gradientbg rounded">
+      <div className="gradientbg rounded  setIndex1">
         <div className="container-md mx-auto text-center">
         <div className="row m-0 p-4 align-items-center">
           <div className="col-sm-7 p-0 m-0 text-center">

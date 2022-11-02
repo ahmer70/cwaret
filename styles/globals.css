@@ -204,6 +204,9 @@ font-size: 18px;
   outline: none!important;
   box-shadow: none!important;
 }
+/* .servcard:hover{
+  background-color: #235374a8;
+} */
 @media screen and (max-width:776px) {
 
   .contactletpanel{

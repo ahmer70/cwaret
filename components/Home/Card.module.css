@@ -69,3 +69,25 @@
 .cardRow>div>div:hover  .cardRow{
   background-color:   rgba(0, 113, 188, 0.6);
 }
+
+@media screen and (max-width:776px) {
+  .cardRow1 {
+    border-bottom: 2px dashed #4797ff;
+  }
+  .cardRow:hover .cardRow1 {
+    border-bottom: 2px dashed white;
+  }
+  
+  
+  
+  .cardRow:hover .cardCol:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px dashed white;
+  }
+  
+  .cardCol:not(:last-child) {
+    border-right: none;
+
+    border-bottom: 2px dashed #4797ff;
+  }
+}

@@ -16,7 +16,7 @@ const TopPanel = () => {
     </div>
 
     <div className="row mb-0 mt-5 p-0 mx-auto">
-      <div className="col-md-9 py-4 px-md-5 px-2 mx-auto text-center p-0 m-0 shadow rounded">
+      <div className="col-md-9 py-4 px-md-5 px-2 mx-auto text-center p-0 m-0 shadow bg-white setIndex1 rounded">
         
         <p className="borderHeading mb-4">Company</p>
         <Fade cascade direction="up">

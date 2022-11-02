@@ -40,16 +40,17 @@ const ServicesCard = ({ data,about }) => {
                 className="position-relative text-center text-decoration-none text-secondary"
                 onMouseEnter={() => setAct(index === 0 ? 100 : index)}
                 onMouseLeave={() => setAct(false)}
-              >
+              > 
                 <Card
-                  className=" p-3 rounded text-center border-0 h-100"
+                  className=" p-3 rounded text-center  position-relative border-0 h-100"
                   style={{
                     
                     boxShadow: "rgb(108 108 127 / 38%) 4px 4px 4px 1px",
                     ...bgset(e.bg, index === 0 ? 100 : index),
                   }}
-                >
-                  <div className="d-flex justify-content-center">
+                >{active === (index === 0 ? 100 : index) &&<span className="w-100 h-100 position-absolute top-0 start-0 rounded" style={{backgroundColor: "#235374a8"}}></span>
+                }
+                  <div className="d-flex justify-content-center position-relative" style={{zIndex:1}}>
                   <Image
                     src={
                       active === (index === 0 ? 100 : index)
@@ -62,10 +63,10 @@ const ServicesCard = ({ data,about }) => {
                     className="mb-3 text-center "
                   />
                   </div>
-                  <p style={{ fontSize: "20px" }}>{e.title}</p>
+                  <p className="position-relative" style={{ fontSize: "20px",zIndex:1 }}>{e.title}</p>
                   <Card.Body>
               
-                  <p>{e.discription}</p>
+                  <p className="position-relative" style={{ zIndex:1 }}>{e.discription}</p>
                   </Card.Body>
                   <Card.Footer className="border-0 m-0 p-0 bg-transparent text-center">
 
@@ -73,8 +74,8 @@ const ServicesCard = ({ data,about }) => {
                     
                     className={`${
                       active === (index === 0 ? 100 : index) ? "text-white" : ""
-                    } m-0 p-0`}
-                  >
+                    } m-0 p-0 position-relative`}
+                    style={{ zIndex:1 }}>
                     Read More <BsArrowRight />
                   </p>
                   </Card.Footer>

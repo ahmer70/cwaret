@@ -66,7 +66,7 @@ const Clients = ({ about  })=>{
         }
     ];
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: `${(_Card_module_css__WEBPACK_IMPORTED_MODULE_4___default().services)} mx-auto mb-5 container-md`,
+        className: `${(_Card_module_css__WEBPACK_IMPORTED_MODULE_4___default().services)} mx-auto mb-5 container-md `,
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: `${(_Card_module_css__WEBPACK_IMPORTED_MODULE_4___default().serviceHead)} mx-auto text-center`,
@@ -75,14 +75,15 @@ const Clients = ({ about  })=>{
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: `row m-0 mx-auto text-center ${about ? "rounded shadow bg-white py-4  px-2 mt-3 " : "pt-4"}  `,
+                className: `row m-0 mx-auto text-center  ${about ? "rounded shadow  bg-white py-4  px-2 mt-3 " : "pt-4"}  `,
+                style: {},
                 children: arr.map((e, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_awesome_reveal__WEBPACK_IMPORTED_MODULE_3__.Rotate, {
                         cascade: true,
                         damping: 0.1,
                         duration: 2000,
-                        className: "col",
+                        className: "col ",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "rounded shadow p-3",
+                            className: "rounded shadow p-3 bg-white setIndex1",
                             style: {
                                 height: "130px"
                             },

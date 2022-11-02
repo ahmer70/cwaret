@@ -32,7 +32,7 @@ const ValuesComponent = () => {
       <p className="borderHeading mb-4 ">Values</p>
 
       <div className={` row  m-0 p-md-4  text-center `}>
-        <div className="col-md-10  bg-white px-0 py-2 rounded mx-auto">
+        <div className="col-md-10  bg-white  setIndex1 px-0 py-2 rounded mx-auto">
           <div
             className="row m-0 p-0 rounded"
             style={{ backgroundColor: "#EBF4FA " }}

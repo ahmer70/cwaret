@@ -71,6 +71,13 @@
     margin-top: 0px;
     width: 100%;
   }
-
-
+  .Exp2ndCardCol {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .cardCol:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px dashed #4797ff;
+  }
+  
 }

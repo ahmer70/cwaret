@@ -48,7 +48,7 @@ const ServiceDetails = ({ data , subData , cons  })=>{
                 ]
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "row m-0 shadow p-2 text-center rounded my-2 align-items-center",
+                className: "row m-0 shadow bg-white setIndex1 p-2 text-center rounded my-2 align-items-center",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "col-md-8 text-secondary fs-5 ",
@@ -84,7 +84,7 @@ const ServiceDetails = ({ data , subData , cons  })=>{
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "p-2",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: " p-3 rounded shadow ",
+                                    className: " p-3 rounded shadow bg-white setIndex1 ",
                                     style: {
                                         height: "300px"
                                     },
