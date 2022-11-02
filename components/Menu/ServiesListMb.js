@@ -205,7 +205,7 @@ const ServiesListMb = () => {
 
                 <>
                   {ES_DATA.map((e, index) => (
-                    <>
+                    
                       <div
                         key={index}
                         className={`rounded p-2 ${style.servicelink}`}
@@ -241,7 +241,7 @@ const ServiesListMb = () => {
                           </div>
                         </Link>
                       </div>
-                    </>
+                    
                   ))}
                 </>
               </div>

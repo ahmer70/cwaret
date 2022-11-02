@@ -20,13 +20,13 @@ const TopPanel = () => {
         
         <p className="borderHeading mb-4">Company</p>
         <Fade cascade direction="up">
-        <h6 className="text-secondary">
+        <p className="text-secondary">
         Cware Technologies is an independent IT Consulting and Engineering organization headquartered in Islamabad, Pakistan with Sales offices in Middle East.
 
-        </h6>
-        <h6 className="text-secondary">
+        </p>
+        <p className="text-secondary">
         We present comprehensive tools and services to wide-ranging business so that anyone, novice or expert, can leverage technology and thrive. We help organization&#39;s re-engineer themselves to ever changing customer requirements.
-        </h6>
+        </p>
         </Fade>
      
       </div>

@@ -10,21 +10,21 @@ const WhatWeDo = () => {
           <p className="borderHeading mb-4">What We Do?</p>
           <div className="shadow rounded bg-white p-4">
             <Fade cascade direction="up">
-            <h6 className="mb-3">
+            <p className="mb-3 text-secondary">
               In today&#39;s competing business world it is impossible to succeed
               without knowing your customer well. With our specialized customer
               oriented software&#39;s you can achieve high customer retention and
               satisfaction by knowing and engaging your customers/clients in an
               efficient way.
-            </h6>
-            <h6 className="">
+            </p>
+            <p className=" text-secondary">
               We are offering softwares&#39;s for a wide ranging of industries to
               better manage their employees and build long term relationships
               with them. Our software&#39;s are helping businesses to collaborate
               within the organization with ease and effectiveness. Now managing
               the payroll, attendance and files within organization is as easy
               and as you like them to be.{" "}
-            </h6>
+            </p>
             </Fade>
            
           </div>
