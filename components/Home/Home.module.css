@@ -104,3 +104,32 @@
 .card2 > div > div > div > a {
   text-decoration: none;
 }
+
+@media screen and (max-width:776px) {
+  .headercaptions {
+    margin-top: 0px;
+    padding: 10px;
+
+  }
+  .card2 {
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px;
+   
+  }
+  .headercaptions > div:last-child {
+    margin-top: 27px;
+
+  
+    width: 100%;
+ 
+  }
+  .headercaptions > div > p {
+    font-size: 22px;
+  }
+  .header {
+    height: fit-content;
+  
+  }
+  
+}

@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 // import axios from "axios";
 import Alert from "react-bootstrap/Alert";
 // import  EmailTemp from "./Email";
+import style from './Contact.module.css'
 function RightPanel({ i }) {
   const [width, setWidth] = useState(0),
     [Message, setMessage] = useState(false),
@@ -63,7 +64,7 @@ function RightPanel({ i }) {
   }, [Message]);
 
   return (
-    <div className="setIndex1 px-2">
+    <div className="setIndex1 p-2">
       <div className="setIndex1">
         <h4 className="gradientHeading2">Contact Us</h4>
         {/* <h4 className="Contact-Background-Discription">
@@ -79,12 +80,12 @@ function RightPanel({ i }) {
           height={50}
           alt="Envelope"
         />
-        <a href="mailto:info.cwaret@cwaret.com " className="text-dark fs-3 ">
+        <a href="mailto:info.cwaret@cwaret.com " className={`fs-3 ${style.mail}`}>
           info.cwaret@cwaret.com
         </a>
 
         <br />
-        <p style={{ color: "gray" }} className="fs-5">
+        <p  className={`fs-5 ${style.title}`}>
           Any question or remarks? just write us a message
         </p>
       </div>
@@ -94,7 +95,8 @@ function RightPanel({ i }) {
           <div className=" col-md-2 col-12 mt-2 p-2">
             <label
               htmlFor="fname"
-              style={{ color: "black", fontWeight: "600", fontSize: "18px" }}
+              className={style.label}
+              style={{  fontWeight: "600", fontSize: "18px" }}
             >
               Name:
             </label>
@@ -118,8 +120,9 @@ function RightPanel({ i }) {
           <div className="row m-0 p-0 align-items-center mb-3">
             <div className="col-md-2">
               <label
+               className={style.label}
                 htmlFor="email"
-                style={{ color: "black", fontWeight: "600", fontSize: "18px" }}
+                style={{  fontWeight: "600", fontSize: "18px" }}
               >
                 Email:
               </label>
@@ -145,8 +148,9 @@ function RightPanel({ i }) {
         <div className="row m-0 p-0 align-items-center mb-3">
           <div className="col-md-2">
             <label
+             className={style.label}
               htmlFor="messagebox"
-              style={{ color: "black", fontWeight: "600", fontSize: "18px" }}
+              style={{ fontWeight: "600", fontSize: "18px" }}
             >
               Message:
             </label>

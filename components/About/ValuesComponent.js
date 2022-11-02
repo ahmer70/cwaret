@@ -31,7 +31,7 @@ const ValuesComponent = () => {
     <div>
       <p className="borderHeading mb-4 ">Values</p>
 
-      <div className={` row  m-0 p-4  text-center `}>
+      <div className={` row  m-0 p-md-4  text-center `}>
         <div className="col-md-10  bg-white px-0 py-2 rounded mx-auto">
           <div
             className="row m-0 p-0 rounded"
@@ -39,7 +39,7 @@ const ValuesComponent = () => {
           >
             {DATA.map((e, index) => (
               <div
-                className={`col-md-4 p-4 text-center ${style.cardCol}`}
+                className={`col-md-4 p-md-4 mb-3 text-center ${style.cardCol}`}
                 key={index}
               >
                 <Fade cascade direction={index===0?"top-left":index===1?"up":"top-right"}>

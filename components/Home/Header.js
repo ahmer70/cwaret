@@ -12,10 +12,10 @@ const Header = () => {
     <div className={`${style.header} p-3 `}>
       
       <div className="row m-0 position-relative" style={{zIndex:2}}>
-        <div className="col-1 ps-0">
+        <div className="col-md-1 ps-0">
         
         </div>
-        <div className="col-6 ">
+        <div className="col-md-6 ">
           <div className={`${style.headercaptions} `}>
             <Fade cascade damping={0.1} direction={"up"} delay={0.8}>
             <p >

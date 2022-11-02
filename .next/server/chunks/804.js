@@ -23,6 +23,15 @@ exports.modules = {
 
 
 const Particlesanimation = ()=>{
+    const [width, setWidth] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const updateDimensions = ()=>{
+        setWidth(window.innerWidth < 766 ? 40 : 80);
+    };
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+        setWidth(window.innerWidth < 766 ? 40 : 80);
+        window.addEventListener("resize", updateDimensions);
+        return ()=>window.removeEventListener("resize", updateDimensions);
+    }, []);
     const particlesInit = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(async (engine)=>{
         // console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -41,7 +50,9 @@ const Particlesanimation = ()=>{
         },
         particles: {
             number: {
-                value: 80,
+                value: {
+                    width
+                },
                 density: {
                     enable: true,
                     value_area: 800
@@ -189,6 +200,7 @@ const Particlesanimation = ()=>{
                         }
                     },
                     particles: {
+                        number: width,
                         color: {
                             value: "#a0abfd"
                         },

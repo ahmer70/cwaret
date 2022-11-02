@@ -13,9 +13,14 @@ const PodcastList = ({ data }) => {
         {data.map((e, index) => (
           <div className="col-md-4 mb-5 " key={index}>
             <>
-            <Card className=" shadow  h-100  border-0"  >
-              <Fade cascade damping={0.1} direction={(index%2===0)?"up":"down"} >
-                <div className=" position-relative bg-light"> <Image
+            <div  className="card  shadow  h-100  border-0"  >
+              <>
+              
+                
+             
+              <Card.Body className="mt-0 p-0">
+                <Fade cascade damping={0.1} direction={(index%2===0)?"up":"down"} >
+                <div  className=" position-relative bg-light"> <Image
                   src={e.image}
                   width={220}
                   height={185}
@@ -36,10 +41,8 @@ const PodcastList = ({ data }) => {
                     {e.heading}
                   </span>
                 </div></div>
-                
-             
-              <Card.Body>
-                <h5 className="mb-0 text-center " style={{ fontWeight: 500 }}>
+               <div className="p-3">
+               <h5 className="mb-0 text-center " style={{ fontWeight: 500 }}>
                   {e.title}
                 </h5>
                 <hr
@@ -57,6 +60,9 @@ const PodcastList = ({ data }) => {
                   <p className="text-secondary">{e.date}</p>
                   {e.owner && <p className="text-secondary">{e.owner}</p>}
                 </div>
+               </div>
+                </Fade>
+            
               </Card.Body>
               <Card.Footer className="border-0 mb-2 bg-transparent text-center">
                 <div className=" bottom-0">
@@ -85,8 +91,8 @@ const PodcastList = ({ data }) => {
                 </div>
           
               </Card.Footer>
-              </Fade>
-            </Card>
+              </>
+            </div>
             </>
           </div>
         ))}

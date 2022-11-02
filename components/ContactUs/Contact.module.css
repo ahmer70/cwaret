@@ -1,0 +1,16 @@
+.mail{
+    color: black;
+}
+.title{
+    color: gray;
+}
+.label{
+    color: black;
+}
+@media screen and (max-width:776px) {
+
+    .mail,.label,.title{
+        color: white;
+    }
+    
+  }

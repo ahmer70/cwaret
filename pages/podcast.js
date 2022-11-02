@@ -15,8 +15,8 @@ let list = [
     owner: null,
     date: "September 22, 2022",
     is_gallery: true,
-    
-    slug:"rt2",
+
+    slug: "rt2",
     btn: null,
     btn_name: null,
     link: null,
@@ -32,7 +32,7 @@ let list = [
     owner: null,
     date: "September 21, 2022",
     is_gallery: true,
-    slug:"rt1",
+    slug: "rt1",
     btn: null,
     btn_name: null,
     link: null,
@@ -47,7 +47,7 @@ let list = [
     owner: null,
     date: "July 22, 2022",
     is_gallery: true,
-    slug:"mou",
+    slug: "mou",
     btn: null,
     btn_name: null,
     link: null,
@@ -62,7 +62,7 @@ let list = [
     owner: null,
     date: "March 16 & 17, 2022",
     is_gallery: true,
-    slug:"nust",
+    slug: "nust",
     btn: null,
     btn_name: null,
     link: null,
@@ -140,6 +140,9 @@ let list = [
   },
 ];
 const Podcast = () => {
+  var today = new Date("2021-10-06"); // yyyy-mm-dd
+  var month = today.toJSON().split("T");
+  console.log("month", month);
   return (
     <>
       <Menu bggray={true} />
@@ -150,16 +153,24 @@ const Podcast = () => {
             <h3>
               Get updated about everything happening here through our Podcasts
             </h3>
+          </div>
+        </div>
+        <div className="d-sm-flex pe-4 justify-content-between align-items-center">
+          <div>
             <h5 className="text-secondary">Listen, Entertain and Educate</h5>
+          </div>
+          <div>
+            {" "}
+            <h6 className="text-secondary">Last Update: {month[0]}</h6>
           </div>
         </div>
       </div>
-      <div className="position-relative " >
-      <span
+      <div className="position-relative ">
+        <span
           className=" position-absolute w-100 bottom-0"
-          style={{ height: "80%",backgroundColor: "hsl(0deg 0% 0% / 10%)" }}
+          style={{ height: "80%", backgroundColor: "hsl(0deg 0% 0% / 10%)" }}
         ></span>
-        <div className="container-md py-5 ">
+        <div className="container-md py-5 p-0 ">
           <PodcastList data={list} />
         </div>
       </div>

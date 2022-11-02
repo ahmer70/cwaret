@@ -31,11 +31,11 @@ const ServicesCard = ({ data,about }) => {
     return robg;
   };
   return (
-    <div className="container-md  setIndex1 pb-5 ">
+    <div className="container-md p-0 setIndex1 pb-5 ">
       <>
-        <div className="row m-0  ">
+        <div className="row m-0 mt-3 ">
           {data.map((e, index) => (
-            <div className="col-md-4 p-0 p-3 text-center  " key={index}>
+            <div className="col-md-4 p-0 p-md-3  mb-3 text-center  " key={index}>
               <Link href={`/services${e.id}` } 
                 className="position-relative text-center text-decoration-none text-secondary"
                 onMouseEnter={() => setAct(index === 0 ? 100 : index)}

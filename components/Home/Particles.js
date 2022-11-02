@@ -1,9 +1,23 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
 import { useCallback } from 'react';
 import { loadFull } from 'tsparticles';
 import Particles from 'react-tsparticles';
 const Particlesanimation = () => {
+  
+  const [width, setWidth]   = useState(null);
+
+const updateDimensions = () => {
+    setWidth(window.innerWidth<766?40:80);
+
+}
+useEffect(() => {
+  setWidth(window.innerWidth<766?40:80);
+
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+}, []);
+
     const particlesInit = useCallback(async (engine) => {
         // console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -24,7 +38,7 @@ const Particlesanimation = () => {
         },
         particles: {
           number: {
-            value: 80,
+            value: {width},
             density: {
               enable: true,
               value_area: 800,
@@ -171,6 +185,7 @@ const Particlesanimation = () => {
         }
       },
       particles: {
+        number:width,
         color: {
           value: "#a0abfd"
         },

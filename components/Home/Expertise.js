@@ -83,7 +83,7 @@ const Expertise = () => {
             <Fade cascade damping={0.1} direction={index===0?"left":"right"}  className={`${style.Exp2ndCardCol}`}>
           
           
-            <Image src={e.image} width={340} height={160} alt={e.title} />
+            <Image src={e.image} width={340} height={160} alt={e.title} className="w-100" />
                   <p style={{ fontSize: "20px" }}>{e.title}</p>
                   <p>{e.description}</p>
           

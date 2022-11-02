@@ -6,7 +6,7 @@ const WhatWeDo = () => {
   return (
     <>
       <div className="row mb-0 p-0 mx-auto setIndex1">
-        <div className="col-md-9 py-4 px-5 mx-auto text-center p-0 m-0 ">
+        <div className="col-md-9 py-4 px-md-5 px-2 mx-auto text-center p-0 m-0 ">
           <p className="borderHeading mb-4">What We Do?</p>
           <div className="shadow rounded bg-white p-4">
             <Fade cascade direction="up">

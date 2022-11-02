@@ -64,3 +64,13 @@
 .Exp2ndCardCol > a > p:first-child {
   color: #4797ff;
 }
+
+
+@media screen and (max-width:776px) {
+  .services {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+
+}

@@ -204,3 +204,34 @@ font-size: 18px;
   outline: none!important;
   box-shadow: none!important;
 }
+@media screen and (max-width:776px) {
+
+  .contactletpanel{
+    display: none;
+  }
+  .contactrightpanel{
+    background-image: url("/image/Group 6115.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white!important;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

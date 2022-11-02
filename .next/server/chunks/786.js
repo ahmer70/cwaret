@@ -242,12 +242,12 @@ const ServicesCard = ({ data , about  })=>{
         return robg;
     };
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        className: "container-md setIndex1 pb-5 ",
+        className: "container-md p-0 setIndex1 pb-5 ",
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "row m-0 ",
+                className: "row m-0 mt-3 ",
                 children: data.map((e, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "col-md-4 p-0 p-3 text-center ",
+                        className: "col-md-4 p-0 p-md-3 mb-3 text-center ",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                             href: `/services${e.id}`,
                             className: "position-relative text-center text-decoration-none text-secondary",

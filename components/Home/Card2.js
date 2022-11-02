@@ -12,7 +12,7 @@ const Card2 = () => {
     <div className={`${style.card2}`}>
       <div className="row m-0">
         <Fade cascade damping={0.1} direction={'left'}  className="col-md-6">
-          <Card    className="border-0 m-0 p-0">
+          <Card    className="border-0 m-0 p-0 h-100">
                     <Link href="/contact"  className="text-decoration-none  text-center w-100"  onMouseEnter={() => setHovDiv({[0]:true})}>
 
                       <div>
@@ -41,7 +41,7 @@ const Card2 = () => {
           </Card>
         </Fade>
         <Fade cascade damping={0.1} direction={'right'}   className="col-md-6">
-          <Card className="border-0">
+          <Card className="border-0 h-100">
 
           <Link href="/contact"  className="text-decoration-none  text-center w-100"  onMouseEnter={() => setHovDiv({[1]:true})}
         onMouseLeave={() => setHovDiv(false)}>
