@@ -6,7 +6,7 @@ const LeftPanel = () => {
     <>
    
 
-      <Image src="/image/Group 6115.svg" width={600}    className="w-100 " height={655} alt="contact-img" />
+      <Image src="/image/Group 6115.jpg" width={600}    className="w-100 " height={655} alt="contact-img" />
     </>
   );
 };
