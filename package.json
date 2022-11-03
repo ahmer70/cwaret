@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+   "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start":  "next start -p 86",
     "lint": "next lint",
     "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
